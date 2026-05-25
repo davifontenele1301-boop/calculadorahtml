@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculadora</title>
+</head>
+
+<body bgcolor="white">
+
+<center>
+
+<h1 style="color:rgb(0, 0, 0);">Calculadora</h1>
+
+<input type="text" id="tela" readonly>
+
+<br><br>
+
+<button onclick="add('7')">7</button>
+<button onclick="add('8')">8</button>
+<button onclick="add('9')">9</button>
+<button onclick="add('+')">+</button>
+
+<br><br>
+
+<button onclick="add('4')">4</button>
+<button onclick="add('5')">5</button>
+<button onclick="add('6')">6</button>
+<button onclick="add('-')">-</button>
+
+<br><br>
+
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('3')">3</button>
+<button onclick="add('*')">*</button>
+
+<br><br>
+
+<button onclick="add('0')">0</button>
+<button onclick="limpar()">C</button>
+<button onclick="mostrar()">=</button>
+<button onclick="add('/')">/</button>
+
+<h2 style="color:rgb(0, 0, 0);" id="resultado"></h2>
+
+</center>
+
+<script>
+
+function add(valor){
+    document.getElementById("tela").value += valor;
+}
+
+function limpar(){
+    document.getElementById("tela").value = "";
+    document.getElementById("resultado").innerHTML = "";
+}
+
+function mostrar(){
+    document.getElementById("resultado").innerHTML = "Pensou mesmo que era uma calculadora comum? Feliz 3 meses de namoro amor! Te amo muito, minha linda! <3";
+}
+
+</script>
+
+</body>
+</html>
